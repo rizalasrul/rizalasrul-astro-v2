@@ -1,0 +1,23 @@
+---
+title: 'Really Busy?'
+description: ''
+icon: '1'
+pubDate: 'Jan 10 2022'
+heroImage: '/src/assets/really-busy.png'
+
+---
+
+We all say we're busy. But how much of that stuff *actually* matters?
+
+Try asking yourself: **"Is this essential?"**  
+Most of what we do isn’t. It’s just stuff we do because someone asked us, told us, or because we’ve always done it that way.
+
+But if you knew tomorrow was your last day, would you still do it? Would you do it the same way?
+
+When you start asking “Is this essential?” — about everything you do, say, or even think — you start to cut the fluff. You get to focus on what really matters. You end up doing fewer things, but doing them way better.
+
+So next time you're overwhelmed, pause and ask:  
+**Do I really need to be doing this?**  
+**Is this the best way to do it?**
+
+> This article is part of the 30 Day Writing Challenge — just writing whatever comes to mind each day.

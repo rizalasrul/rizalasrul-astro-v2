@@ -1,0 +1,33 @@
+---
+title: 'Is Work-Life Balance a Myth?'
+description: ''
+icon: '3'
+pubDate: 'Jan 14 2022'
+heroImage: '/src/assets/is-work-life-balance-a-myth.png'
+
+---
+
+A while back, social media was buzzing with hot takes on work-life balance.  
+Some said it’s real. Others dismissed it as a myth.
+
+Most of the loudest voices? Entrepreneurs, influencers, creators — people with big followings. And they often spoke from their own lens: "Work-life balance doesn’t exist!"  
+
+But what about regular employees? People with smaller followings whose voices aren’t as amplified online?
+
+From their perspective, balance might mean simply logging off after office hours. And maybe that’s just as valid.
+
+Today, the line between “work” and “life” is blurred. You might scroll TikTok during working hours, and later check Slack while lying on the beach.
+
+For entrepreneurs, balance doesn’t mean 9-to-5. It’s more like living with a constant sense of urgency — even on vacation. But that doesn’t mean they’re out of balance. It just looks different.
+
+For others, balance might mean working fixed shifts. Some do night shifts, then spend the morning living their life. That’s still balance — just not the influencer version.
+
+As for me, I have flexibility. Some days I work five hours, other days twelve.  
+Sometimes I run in the afternoon, work in the evening.  
+Balance, for me, is about putting things in their right place.  
+
+In the end, work-life balance is personal. There’s no one-size-fits-all.
+
+Find your own balance — and protect it.
+
+> This article is part of the 30 Day Writing Challenge — where I write whatever comes to mind each day.

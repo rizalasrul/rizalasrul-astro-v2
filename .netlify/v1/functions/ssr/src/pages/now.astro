@@ -1,0 +1,25 @@
+---
+// components
+import BlogDetail from '@/layouts/BlogDetail.astro';
+
+const description = '';
+---
+
+<BlogDetail
+	icon="beach"
+	title="Now — What's Happening?"
+	description={description}
+	pubDate={new Date('May 01, 2025')}
+	heroImage="/src/assets/now.png"
+>
+	<p>This is my "Now Page," where I share what I'm up to lately. I'll try to keep it updated, but I might forget — hopefully not!</p>
+
+	<h2>Latest Update</h2>
+	<p>Right now, I'm working as a <strong>Software Engineer, Frontend</strong> at <strong>Tiket</strong>. I've been to Japan three times, spent 45 days there, and visited 14 prefectures. I'm also preparing for my <strong>relocation to Japan</strong> soon.</p>
+
+	<h2>Work</h2>
+	<p>I'm focused on improving my frontend skills and contributing to projects at Tiket.</p>
+
+	<h2>Personal</h2>
+	<p>When I'm not coding, I'm playing <strong>Coral Island</strong>, a game from Indonesia. I'm also running 5 km a day as part of <strong>#zaljalan</strong>, though I've been a bit inconsistent lately. Hoping to get back on track!</p>
+</BlogDetail>

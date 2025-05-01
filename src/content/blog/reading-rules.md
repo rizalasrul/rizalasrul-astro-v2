@@ -1,0 +1,25 @@
+---
+title: 'Reading rules'
+description: ''
+icon: '1'
+pubDate: 'Dec 26 2021'
+heroImage: '/src/assets/reading-rules.png'
+
+---
+
+Here are a few personal rules I follow when it comes to reading:
+
+1. **Read often.** The more you read, the better it gets.
+2. **Don’t fall for speed reading.** It sounds cool, but it doesn’t work. Good reading takes time.
+3. **Old books are usually better.** They’ve stood the test of time for a reason.
+4. **Quit bad books.** Life’s too short. Follow the [100 pages minus your age rule](https://medium.com/@stevenrushing/big-fan-of-the-rule-of-thumb-100-pages-minus-your-age-b56cec263f1c).
+5. **Take notes.** If you're just rushing to finish, you're missing the point.
+6. **Let one book lead to another.** Every good book should point you to the next one.
+7. **Apply what you read.** Ask yourself: *“How can I use this in real life?”* Reading isn’t about looking smart — it’s about growing.
+8. **Share good books.** If it made an impact, pass it on.
+
+---
+
+That’s it — simple but useful.
+
+> This article is part of the 30 Day Writing Challenge. I’ll challenge myself to write whatever comes to mind.

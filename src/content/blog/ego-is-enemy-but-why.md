@@ -1,0 +1,28 @@
+---
+title: 'Ego Is the Enemy, But Why?'
+description: ''
+icon: '3'
+pubDate: 'Dec 23 2021'
+heroImage: '/src/assets/ego-is-enemy-but-why.png'
+
+---
+
+A couple of months ago, I picked up a book by Ryan Holiday titled *Ego Is the Enemy*. I discovered it through a few content creators on Instagram who recommended it—and I'm glad they did.
+
+The book explores how ego, in its many forms, can quietly sabotage us. One key takeaway that struck me is how ego can hinder our ability to learn and grow.
+
+> It's impossible to learn that which you think you already know.
+
+And that's the problem. When we let ego take the wheel—when we assume we already know enough—we close the door to curiosity. We stop listening. We stop learning. We start pretending instead of improving.
+
+Ironically, the truly wise are often the most humble. They recognize how much they *don't* know. They stay curious. They keep asking questions.
+
+That's why Socrates was so respected by the Stoics. He didn't walk around claiming to know everything. Instead, he embraced his ignorance—and turned it into a strength. He asked questions. He sought understanding. Not because he wanted to show how smart he was, but because he genuinely wanted to find the truth.
+
+Ego is the enemy because it keeps you stuck. It builds a wall between you and progress. But humility? That's what opens the door. That's what keeps you growing, learning, and moving forward.
+
+Hope you got something from this.
+
+---
+
+> This article is part of the **30 Day Writing Challenge**, where I challenge myself to write whatever comes to mind—one day at a time.

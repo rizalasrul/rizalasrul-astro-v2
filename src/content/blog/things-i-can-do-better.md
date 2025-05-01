@@ -1,0 +1,51 @@
+---
+title: 'Things I Can Do Better'
+description: ''
+icon: '3'
+pubDate: 'Jan 01 2022'
+heroImage: '/src/assets/things-i-can-do-better.png'
+
+---
+
+New year, new goals — but no new resolutions for me this time.  
+I just want to be a better version of myself.
+
+Honestly, I started the year pretty chill. Woke up early, binge-watched *Iron Fist*, and now I’m writing this post.
+
+This is a reflection based on feedback I’ve received from my wife, family, coworkers, lead, manager — basically, people I’ve worked and lived with.
+
+Here are three areas I’d like to work on:
+
+---
+
+## 1. Being *too* frugal
+
+Saving money is great, but I tend to take it too far.  
+My wife has pointed this out a few times — like when I insist on buying cheaper stuff, even if the quality isn’t great.
+
+One example: I bought a watch for under 100k IDR. It looked nice and was super cheap, but it broke after a year.  
+Sometimes it’s worth paying a bit more for better quality, and that’s something I need to learn.
+
+---
+
+## 2. Multitasking the wrong things
+
+I’ve caught myself juggling too many small, unimportant tasks at once.  
+It doesn’t help — I just end up overthinking and giving myself a headache.
+
+Focus is something I need to improve.
+
+---
+
+## 3. Hiding in the background
+
+Back in school, I’d avoid raising my hand even when I knew the answer — just to stay unnoticed.  
+I guess I was shy or just didn’t want attention.
+
+That habit followed me into work. But one day, my lead gave me solid feedback, and since then I’ve been trying to speak up more — sharing opinions and giving input in public settings.
+
+---
+
+Happy new year — hope 2022 brings growth and good things for all of us!
+
+> This article is part of the 30 Day Writing Challenge. I'm pushing myself to write whatever comes to mind, every day.
