@@ -48,7 +48,7 @@ const icon = `${Math.floor(Math.random() * 5) + 1}`;
 
 <html lang="en">
   <head>
-    <AtBaseHead title={title} description={description} />
+    <AtBaseHead title={title} description={description} image={heroImage}/>
   </head>
   <body>
     <MvHeader />
@@ -61,7 +61,6 @@ const icon = `${Math.floor(Math.random() * 5) + 1}`;
               <span class="font-kablamo text-ppink">{title.charAt(0)}</span>
               {title.slice(1)}
             </h1>
-            <p  set:html={description} />
           </div>
           <Image
             src={images[heroImage]()}
