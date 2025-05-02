@@ -6,6 +6,9 @@ import { Icon } from 'astro-icon/components';
 // components
 import FormattedDate from '@/components/atoms/AtFormattedDate.astro';
 
+// internal
+import { BLOGLIST_TITLE, BLOGLIST_DESCRIPTION } from '../../consts';
+
 const url = new URL(Astro.request.url);
 const page = parseInt(url.searchParams.get('page') || '1', 10);
 
@@ -30,8 +33,8 @@ const getRandomClass = () => {
 ---
 
 <section class="flex flex-col text-center gap-4">
-  <p class="text-pblack">Documenting the journey.</p>
-  <h2 class="text-4xl font-bold">Tech insights & life reflections.</h2>
+  <p class="text-pblack">{BLOGLIST_TITLE}</p>
+  <h2 class="text-4xl font-bold">{BLOGLIST_DESCRIPTION}</h2>
 
   <ul id="post-list" class="flex flex-wrap justify-center md:justify-start gap-8 py-20">
     {
@@ -45,11 +48,11 @@ const getRandomClass = () => {
                 <Icon name={icon} />
               </div>
               <h4 class="text-xl font-semibold">{post.data.title}</h4>
-              <p class="date -mt-4 text-sm font-light">
+              <p class="date -mt-4 text-xs font-light">
                 <FormattedDate date={post.data.pubDate} />
               </p>
+              <p set:html={post.data.description} />
             </a>
-            <div set:html={post.data.description} />
           </li>
         );
       })

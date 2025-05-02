@@ -5,3 +5,5 @@ export const SITE_TITLE = 'Rizal Asrul Pambudi';
 export const SITE_DESCRIPTION = 'Welcome to my website!';
 export const HOMEBLOG_TITLE = 'Documenting the journey';
 export const HOMEBLOG_DESCRIPTION = 'Tech insights & life reflections';
+export const BLOGLIST_TITLE = 'Writing along the way';
+export const BLOGLIST_DESCRIPTION = 'From tech to life lessons';
