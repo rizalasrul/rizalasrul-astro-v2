@@ -1,0 +1,116 @@
+---
+title: 'Understanding JavaScript Objects'
+description: "In this article, we'll dive into the basics of JavaScript objects, explore how they work, and understand the difference between primitive and reference data types. We'll also look at common ways to create objects."
+icon: '3'
+pubDate: 'Dec 30 2017'
+heroImage: '/src/assets/understanding-javascript-objects.png'
+---
+
+Objects are a fundamental concept when learning JavaScript. Unlike languages like Java or .NET, which have primitive data types such as integers, floats, chars, and strings, JavaScript includes both primitive and complex data types. The object is one of the key complex types and acts as a reference.
+
+## What is an Object?
+
+An object in JavaScript is essentially a collection of name-value pairs, where each value can be a primitive or even another object. Each entry in an object is called a **property**, and functions inside objects are called **methods**.
+
+Here's a simple example:
+
+```javascript
+var people  = {
+  firstName : 'Rizal',
+  lastName : 'Asrul Pambudi',
+};
+```
+
+In this example, `firstName` and `lastName` are properties, and their values are 'Rizal' and 'Asrul Pambudi' respectively.
+
+## Property Names
+
+Property names in JavaScript can be strings or numbers. However, if the property name is a number, it’s accessed differently:
+
+```javascript
+var people = {
+  name : 'Rizal Asrul Pambudi',
+  93 : 'My weight',
+};
+
+console.log(people.93) // This will throw an errorB
+console.log(people['93']) // Correct. This will display 'My weight'
+```
+
+Tip: It’s generally better to avoid using numbers as property names and instead use square bracket notation.
+
+## Reference vs. Primitive Data Types
+
+The key difference between reference and primitive data types is how their values are stored.
+- Primitive data types store their actual values.
+- Reference data types, like objects, store the reference (or address) of the value, not the actual value itself.
+
+### Example with Primitive Data Type:
+
+```javascript
+// Primitive data type is stored as value
+var age = 24;
+var age2 = age; // age's value is stored in age2
+
+age2 = 20; // age2's value changed
+
+console.log(age)  // 24
+console.log(age2) // 20
+```
+
+### Example with Object (Reference Data Type):
+
+```javascript
+// Reference data type stores a reference to the value
+var laptop = { brand : 'Toshiba' };
+var newLaptop = laptop;
+
+laptop.brand = 'HP';
+
+console.log(newLaptop.brand); // HP
+console.log(laptop.brand); // HP
+```
+
+Notice how changing `laptop` also affects `newLaptop`? That’s because `laptop` holds a reference to the same object as `newLaptop`.
+
+## Ways to Create Objects
+
+### 1. Object Literal
+
+This is the most common and easiest way to create an object:
+
+```javascript
+// Empty object
+var emptyObject = {};
+
+// Object with properties
+var banana = {
+  color : 'yellow',
+  shape : 'long',
+  price : 5000,
+  flavour : function() { 
+    console.log('so sweet!');
+  },
+};
+```
+
+### 2. Object Constructor
+
+Alternatively, you can create an object using a constructor function:
+
+```javascript
+// Empty object using constructor
+var banana = new Object();
+
+// Adding properties
+banana.color = 'yellow';
+banana.shape = 'long';
+banana.price = 5000;
+banana.flavour = function() {
+  console.log('so sweet!');
+};
+```
+
+## Conclusion
+
+In JavaScript, objects are key data structures. The major difference between primitive and reference types is that primitives hold the actual value, while references hold a reference to the value. Objects can be created using either object literals or constructors.
