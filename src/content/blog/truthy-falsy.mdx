@@ -1,0 +1,117 @@
+---
+title: 'Truthy & Falsy in JS'
+description: "Learn how truthy and falsy values work in JavaScript and how they can simplify your code."
+icon: '3'
+pubDate: 'Aug 18 2018'
+heroImage: '/src/assets/truthy-falsy.png'
+---
+
+Sometimes the best way to write cleaner JavaScript is by understanding how it handles values in conditionals. After a short break, I figured this would be a great topic to write about—because truthy and falsy values have helped me write way more efficient code.
+
+## What Are Truthy & Falsy?
+
+If you’re new to JavaScript, you might wonder what “truthy” and “falsy” even mean.
+
+Basically:
+- A **truthy** value is something that behaves like `true` in a boolean context.
+- A **falsy** value is something that behaves like `false`.
+
+Here’s a quick example:
+
+```javascript
+function logTruthiness(val) {
+  if (val) {
+    console.log('Truthy!');
+  } else {
+    console.log('Falsy!');
+  }
+}
+```
+
+Try running this:
+
+```javascript
+logTruthiness(true);          // Truthy!
+logTruthiness({});            // Truthy!
+logTruthiness([]);            // Truthy!
+logTruthiness('hello');       // Truthy!
+logTruthiness(3.14);          // Truthy!
+logTruthiness(new Date());    // Truthy!
+```
+
+And now the falsy values:
+
+```javascript
+logTruthiness(false);         // Falsy!
+logTruthiness(null);          // Falsy!
+logTruthiness(undefined);     // Falsy!
+logTruthiness(NaN);           // Falsy!
+logTruthiness(0);             // Falsy!
+logTruthiness('');            // Falsy!
+```
+
+## Why Should You Care?
+
+Using truthy/falsy values with logical operators like `||` and `&&` can help you shorten your code and avoid extra if statements.
+
+Let’s say you have this:
+
+```javascript
+function setErrorMessage(error) {
+  if (error) {
+    return error;
+  } else {
+    return '-';
+  }
+}
+```
+
+You can simplify it with `||`:
+
+```javascript
+function setErrorMessage(error) {
+  return error || '-';
+}
+```
+
+Neat, right?
+
+## Quick Refresher: Short-Circuiting
+
+JavaScript evaluates logical expressions from left to right, and it can skip parts of the expression based on these rules:
+
+- `false && anything` returns false
+- `true || anything` returns true
+
+So in our earlier example, `error || '-'` returns `error` if it’s truthy, or `'-'` if not.
+
+## More Examples
+
+Logical AND (`&&`)
+
+```javascript
+true && true        // true
+true && false       // false
+false && true       // false
+'Cat' && 'Dog'      // "Dog"
+false && 'Cat'      // false
+'Cat' && false      // false
+'' && false         // ""
+false && ''         // false
+```
+
+Logical OR (`||`)
+
+```javascript
+true || true        // true
+false || true       // true
+true || false       // true
+false || (3 == 4)   // false
+'Cat' || 'Dog'      // "Cat"
+false || 'Cat'      // "Cat"
+'Cat' || false      // "Cat"
+'' || false         // false
+false || ''         // ""
+```
+
+Now that you know how truthy and falsy values work, try using them to simplify your code. Less typing, same result 😄

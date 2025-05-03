@@ -1,0 +1,145 @@
+---
+title: 'First Time Testing Vue Components with Jest'
+description: "Learn how to set up Jest and vue-test-utils to write your first unit test in a Vue component, step by step."
+icon: '3'
+pubDate: 'Jun 25 2019'
+heroImage: '/src/assets/first-time-testing-vue-components-with-jest.png'
+---
+
+Hey there! 👋  
+Recently at work, all engineers were encouraged to write unit tests for their code. It was actually my first time writing unit tests for Vue components, so I want to share how I did it — in a simple way that hopefully helps you get started too.
+
+## Why I Picked Jest
+
+I used **Jest** to write unit tests for Vue. It’s popular and comes with nice features like:
+
+- Almost zero config needed
+- Runs tests fast and in parallel
+- Supports code coverage
+- Snapshot testing
+- Easy mocking
+
+Plus, most of my teammates were already using it — so that made it easier to learn.
+
+Other options you might explore are [Karma](https://karma-runner.github.io/latest/index.html), [Mocha](https://mochajs.org/), or [Chai](https://www.chaijs.com/).
+
+## Setting Up the Project
+
+Let’s start by creating a basic Vue project using Vue CLI:
+
+```bash
+npm install -g vue-cli
+vue init webpack vue-test
+cd vue-test
+```
+
+Install the testing tools:
+
+```bash
+npm install --save-dev jest vue-jest babel-jest vue-test-utils
+```
+
+Update your `package.json` with this Jest config:
+
+```json
+"jest": {
+  "moduleNameMapper": {
+    "^vue$": "vue/dist/vue.common.js"
+  },
+  "moduleFileExtensions": ["js", "vue"],
+  "transform": {
+    "^.+\\.js$": "babel-jest",
+    ".*\\.(vue)$": "vue-jest"
+  }
+}
+```
+
+And add a test script:
+
+```json
+"scripts": {
+  "test": "jest"
+}
+```
+
+## A Simple Component to Test
+
+Here's a basic Vue component called `NegoButton.vue`:
+
+```javascript
+<template>
+  <button
+    :disabled="idDisabled"
+    :class="{ 'is-active': isTransacting }"
+    @click.prevent="pay"
+  >
+    <span>Yuk Nego</span>
+  </button>
+</template>
+
+<script>
+export default {
+  name: 'NegoButton',
+  props: {
+    idDisabled: Boolean,
+    isTransacting: Boolean,
+  },
+  methods: {
+    pay() {
+      // some logic here
+    },
+  },
+};
+</script>
+```
+
+## Writing Your First Test
+
+Let’s create a test file: `NegoButton.spec.js` (you can put this in `src/components/test/`).
+
+```javascript
+import NegoButton from '../NegoButton';
+
+describe('NegoButton.vue', () => {
+  it('should have the correct name', () => {
+    expect(NegoButton.name).toBe('NegoButton');
+  });
+});
+```
+
+Run the test:
+
+```bash
+npm run test
+```
+
+If everything works, you’ll see it pass! ✅
+
+## Using vue-test-utils + Snapshots
+
+Now let’s use vue-test-utils to render the component and do snapshot testing:
+
+```javascript
+import { shallowMount } from '@vue/test-utils';
+import NegoButton from '../NegoButton';
+
+describe('NegoButton.vue', () => {
+  it('renders correctly', () => {
+    const wrapper = shallowMount(NegoButton);
+    expect(wrapper.element).toMatchSnapshot();
+  });
+});
+```
+
+Snapshot tests help you catch unexpected changes to the HTML structure of a component. If the HTML changes, Jest will tell you. To update the snapshot if the change is expected:
+
+```bash
+npm run test -u
+```
+
+---
+
+That's it! 🎉<br />
+Now you’ve got a working setup to start testing Vue components. You can add more tests to check things like button clicks, prop behavior, or event emissions.
+
+Let me know if you’d like an example for testing @emit or other features!
