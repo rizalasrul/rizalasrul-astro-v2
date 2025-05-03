@@ -1,0 +1,29 @@
+---
+title: 'Network Scanning Basics'
+description: "Quick intro to scanning networks and finding open ports using tools like Nmap."
+icon: '3'
+pubDate: 'May 30 2015'
+heroImage: '/src/assets/network-scanning-basics.png'
+---
+
+
+The second phase of ethical hacking is **network scanning** — this is when a hacker (or ethical hacker) checks a target network to find active devices, open ports, and running services.
+
+In socket-based programming, the **server** is the one that provides a service, and the **client** is the one that uses it. A **socket** is basically an IP address + a port number. For example, an email service might use the socket `202.9.85.49:25`.
+
+In this phase, we’ll try **port scanning**, which means checking which ports are open on a host.
+
+Why does this matter? Because **network services can be vulnerable**. Some services have weak spots like bad code, weak passwords, unencrypted data, or allowing connections from anywhere. These can all be entry points for attackers. That’s why it's best to **only keep necessary ports open** to reduce the risk.
+
+There are several ways to scan using **Nmap**, such as:
+
+- **Connect scan** (`-sT`)
+- **TCP SYN scan** (`-sS`)
+- **TCP FIN scan** (`-sF`)
+- **TCP Xmas Tree scan** (`-sX`)
+- **TCP Null scan** (`-sN`)
+- **TCP ACK scan** (`-sA`)
+- **TCP Window scan**
+- **TCP RPC scan**
+
+You can learn more about these types of scans [here](https://onedrive.live.com/redir?resid=48dcd38b3e3b9734!726&authkey=!AEWWmAyvt_JdblY&ithint=file%2cpdf).

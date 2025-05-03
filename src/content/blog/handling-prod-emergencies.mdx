@@ -1,0 +1,49 @@
+---
+title: 'Dealing with Emergencies in Production'
+description: "What to do when things go wrong in production, based on real experience."
+icon: '3'
+pubDate: 'Jan 12 2020'
+heroImage: '/src/assets/handling-prod-emergencies.png'
+---
+
+> Everyone makes mistakes — it's part of growing as an engineer.
+
+Even after all the hard work, sometimes bugs still make it to production and cause issues. It sucks, but it's normal. What matters is how we handle it.
+
+A while back, not long after I joined Bukalapak, I introduced a bug that broke electricity token payments on the desktop site. I had built a recurring transaction feature for postpaid electricity and tested everything locally and on staging. It all looked good.
+
+What I missed? That the page I was working on also handled **prepaid** electricity tokens. I didn’t test that part. Boom — token payments stopped working.
+
+Here’s what I learned about how to deal with emergencies like this:
+
+## Stay Calm
+
+Don’t panic. It’s tempting to rush, but that can make things worse. Take a breath (or sip that coffee), then move with a clear head.
+
+## Talk to Your Team
+
+> Not every emergency is urgent.
+
+Let your PM or team lead know what's happening. If it’s really urgent and you already have a fix ready, go for it — but only if it's small and safe. If not, wait for directions.
+
+At Bukalapak, we look at the GMV or revenue impact to decide how urgent a bug is.
+
+## Test Thoroughly
+
+Even in a rush, never skip testing. Try your fix locally, on staging, preprod, or even beta production if needed. Ask QA for help, and add unit tests if possible.
+
+Test until you're confident.
+
+## Ask for Help
+
+If your squad is stuck, don’t hesitate to reach out to senior engineers or other teams. You’re not alone.
+
+## Monitor After Deploy
+
+Once the fix is live, double-check everything. Monitor logs, metrics, and ask your lead for a second pair of eyes if needed.
+
+## Share What You Learned
+
+Don’t keep it to yourself. Share your story — in chat, meetings, or docs. Your experience can help others avoid the same mistake.
+
+Mistakes are part of the job. Learning and growing from them is what really matters.
