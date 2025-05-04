@@ -1,0 +1,101 @@
+---
+title: '3 months with LeetCode'
+description: "What I learned during my career break solving LeetCode problems — and how it compares to real software engineering."
+icon: '3'
+pubDate: 'May 05 2025'
+heroImage: '/src/assets/3-months-with-leetcode.png'
+---
+
+I've been on a career break for the past few months — no meetings, no deploys, just some quiet time to reset and reflect. One of the things I wanted to improve during this time was my algorithm skills. So I picked up LeetCode.
+
+At first, it was hard. Really hard. I failed most of the problems I tried. But over time, I started noticing patterns. I got better. I understood how to break problems down and find efficient solutions. It was fun, and honestly, pretty addicting.
+
+But here's the thing: even after I solved multiple problems, I still didn't feel like I was better at building web platforms or APIs.
+
+## LeetCode ≠ real world engineering
+
+Being good at solving LeetCode problems doesn't mean you're automatically good at software development. In actual engineering work — especially as a senior developer — most of your time isn't spent doing pure algorithmic thinking. You're dealing with messy real-world problems, coordinating with other teams, reviewing code, mentoring juniors, writing docs, and managing stakeholders.
+
+Sure, you need logic and problem-solving skills. But those are just one part of the job.
+
+## Why companies still use LeetCode
+
+It's understandable though. For companies like Google, Amazon, or any well-known startup, there are often *hundreds* or even *thousands* of applicants for every role. Using LeetCode-style problems is an easy way to filter candidates and test logical thinking quickly. It's not perfect, but it's practical.
+
+So even if it's not a perfect reflection of day-to-day work, it's still worth practicing if you're job hunting.
+
+## LeetCode patterns that helped me
+
+Here are some common patterns I found super helpful:
+
+#### 1. Two pointers
+
+Great for problems involving arrays or strings where you need to compare or track values from both ends.
+
+**Example:**
+> Given a sorted array of integers, return two numbers such that they add up to a specific target.
+
+```javascript
+function twoSum(numbers, target) {
+  let left = 0, right = numbers.length - 1;
+  while (left < right) {
+    const sum = numbers[left] + numbers[right];
+    if (sum === target) return [left + 1, right + 1];
+    else if (sum < target) left++;
+    else right--;
+  }
+}
+```
+
+### 2. Sliding Window
+
+Useful when you need to track a subset of data like the longest substring, or max average in a subarray.
+
+**Example:**
+
+> Find the length of the longest substring without repeating characters.
+
+```javascript
+function lengthOfLongestSubstring(s) {
+  let set = new Set();
+  let left = 0, maxLen = 0;
+  for (let right = 0; right < s.length; right++) {
+    while (set.has(s[right])) {
+      set.delete(s[left]);
+      left++;
+    }
+    set.add(s[right]);
+    maxLen = Math.max(maxLen, right - left + 1);
+  }
+  return maxLen;
+}
+```
+
+### 3. Hash Map
+
+Extremely handy for tracking occurrences or positions, especially with arrays and strings.
+
+**Example:**
+
+> Find the first pair of numbers that add up to a target.
+
+```javascript
+function twoSum(nums, target) {
+  const map = new Map();
+  for (let i = 0; i < nums.length; i++) {
+    const complement = target - nums[i];
+    if (map.has(complement)) return [map.get(complement), i];
+    map.set(nums[i], i);
+  }
+}
+```
+
+## Final thoughts
+
+Solving LeetCode taught me a lot about logical thinking, and I'm glad I dedicated time to it. But it also made me appreciate the broader skills required in software engineering.
+
+LeetCode can help get your foot in the door, but building real software — working with a team, writing maintainable code, and shipping features — is where the real challenge (and fun) begins.
+
+If you're on a career break and thinking about brushing up on coding skills, go ahead and try some LeetCode. Just don't forget to balance it with practical project experience too.
+
+You'll need both.
