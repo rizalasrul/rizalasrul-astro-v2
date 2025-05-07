@@ -37,6 +37,14 @@ import '../../styles/hamburgers.css';
       <div
         id="navigation"
         class="fixed top-0 left-0 w-full h-full bg-white transform -translate-y-full transition-transform duration-300 ease-in-out">
+        <button
+          id="closeMenu"
+          class="absolute top-6 right-7 text-gray-600 hover:text-gray-900"
+          aria-label="Close menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
         <ul class="flex flex-col items-center justify-center h-full gap-8 text-nowrap">
           <li>
             <AtHeaderLink href="/" text="Where it starts" style="primary" />
@@ -63,6 +71,13 @@ import '../../styles/hamburgers.css';
   function init(){
     const hamburger = document.querySelector('.hamburger');
     const menu = document.getElementById('navigation');
+    const closeButton = document.getElementById('closeMenu');
+
+    function closeMenu() {
+      hamburger.classList.remove('is-active');
+      menu.classList.add('-translate-y-full');
+      menu.classList.remove('translate-y-0');
+    }
 
     if (hamburger && menu) {
       hamburger.addEventListener('click', () => {
@@ -70,6 +85,10 @@ import '../../styles/hamburgers.css';
         menu.classList.toggle('-translate-y-full');
         menu.classList.toggle('translate-y-0');
       });
+
+      if (closeButton) {
+        closeButton.addEventListener('click', closeMenu);
+      }
     }
   }
   init();
