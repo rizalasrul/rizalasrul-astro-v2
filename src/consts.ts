@@ -1,5 +1,16 @@
 // Place any global data in this file.
 // You can import this data from anywhere in your site by using the `import` keyword.
+import hokkaido1 from '/src/assets/japan/hokkaido-1.png';
+import hokkaido2 from '/src/assets/japan/hokkaido-2.png';
+import hokkaido3 from '/src/assets/japan/hokkaido-3.png';
+import hokkaido4 from '/src/assets/japan/hokkaido-4.png';
+import hokkaido5 from '/src/assets/japan/hokkaido-5.png';
+import hokkaido6 from '/src/assets/japan/hokkaido-6.png';
+import hokkaido7 from '/src/assets/japan/hokkaido-7.png';
+import hokkaido8 from '/src/assets/japan/hokkaido-8.png';
+import hokkaido9 from '/src/assets/japan/hokkaido-9.png';
+
+
 export const SITE_TITLE = 'Rizal Asrul Pambudi';
 export const SITE_DESCRIPTION = 'Welcome to my website!';
 export const HOMEBLOG_TITLE = 'Documenting the journey';
@@ -10,9 +21,33 @@ export const PREFECTURES = {
   '01': {
     jp: '北海道',
     en: 'Hokkaido',
-    subtitle: 'The Northernmost Prefecture',
+    subtitle: 'The northernmost prefecture',
     lastVisit: '2025-02-15',
-    photos: ['/photos/hokkaido-1.jpg', '/photos/hokkaido-2.jpg'],
+    experience: `
+      ❄️ Sapporo hit -4°C — and it’s even colder up north!<br />
+      🚄 Riding the Hayabusa Shinkansen to Tokyo? Totally unforgettable!<br />
+      🦀 Seafood here? Pure heaven, every bite!
+    `,
+    rating: 5,
+    tips: [
+      'Dress in layers — winters are harsh, and even summers can be cool in the evenings.',
+      'Carry cash — many rural spots and small shops don’t take credit cards.',
+      'Rent a car — public transport is limited outside big cities; driving gives you more freedom.',
+      'Check the weather — snow can affect travel plans, especially in winter.',
+      'Book accommodations early — popular areas like Niseko and Furano fill up fast, especially during ski season.',
+      'Try local specialties — don’t miss fresh seafood, soup curry, and Hokkaido dairy treats!',
+    ],
+    photos: [
+      hokkaido1.src,
+      hokkaido2.src,
+      hokkaido3.src,
+      hokkaido4.src,
+      hokkaido5.src,
+      hokkaido6.src,
+      hokkaido7.src,
+      hokkaido8.src,
+      hokkaido9.src,
+    ],
   },
   '02': { jp: '青森', en: 'Aomori' },
   '03': { jp: '岩手', en: 'Iwate' },
