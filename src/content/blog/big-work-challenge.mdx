@@ -1,0 +1,17 @@
+---
+title: 'Big Work Challenge'
+description: "How I tackled a tough cloud migration, faced tricky deployment issues, and learned to go beyond just frontend work."
+icon: '3'
+pubDate: 'May 10 2025'
+heroImage: '/src/assets/big-work-challenge.png'
+---
+
+Back in 2019, two years into my role, I was handed a big responsibility: migrate our company’s microfrontend service from an on-premise setup to the cloud (GCP). The goal was to boost scalability and reliability — something critical for the company’s long-term growth.
+
+At first, I thought this would mainly involve frontend adjustments. But it quickly became clear it was much more than that. I had to collaborate closely with multiple teams: infrastructure, TPM, and networking. Every day I joined syncs, followed the migration playbook provided by the infra team, and updated the microfrontend so it could run smoothly in the cloud. I also had to configure the CI/CD pipeline according to the cloud setup, something I didn’t have much prior experience with.
+
+Development went smoothly, but the real challenge came during deployment. As soon as we pushed to the preproduction environment, things broke badly. The service wouldn’t load — the HTML was blank, and all JS and CSS assets returned 404 errors. It was frustrating because everything worked fine locally.
+
+I rechecked the migration guides over and over, pinged the infra team, asked for advice from other frontend engineers, and even dug through StackOverflow for similar cases. After hours of digging, I finally spotted the issue: a misconfigured build tag in the pipeline was causing the assets to upload to the wrong location in the cloud bucket. Once I fixed the build tag, everything worked perfectly in both preproduction and production.
+
+This experience turned out to be one of the most valuable challenges of my career. It pushed me beyond just writing frontend code — I had to step into unfamiliar areas like infrastructure, cloud systems, and deployment pipelines. It also taught me how to work across teams and troubleshoot complex issues that don’t fall neatly into one domain. In the end, it grew my confidence and broadened my technical skill set, giving me tools I still use today.
