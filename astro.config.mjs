@@ -9,7 +9,7 @@ import netlify from '@astrojs/netlify';
 // https://astro.build/config
 export default defineConfig({
   site: process.env.SITE || 'https://rizalasrul.com',
-  output: 'static',
+  output: 'server',
   integrations: [mdx(), sitemap(), tailwind(), icon()],
   adapter: netlify(),
 });
