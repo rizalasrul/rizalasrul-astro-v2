@@ -27,18 +27,16 @@ export const PREFECTURES = {
     subtitle: 'The northernmost prefecture',
     lastVisit: '2025-02-15',
     experience: `
-      ❄️ Sapporo hit -4°C — and it's even colder up north!<br />
+      ❄️ Sapporo hit -4°C and it's even colder up north!<br />
       🚄 Riding the Hayabusa Shinkansen to Tokyo? Totally unforgettable!<br />
       🦀 Seafood here? Pure heaven, every bite!
     `,
     rating: 5,
     tips: [
-      'Dress in layers — winters are harsh, and even summers can be cool in the evenings.',
-      "Carry cash — many rural spots and small shops don't take credit cards.",
-      "Rent a car — public transport is limited outside big cities; driving gives you more freedom.",
-      'Check the weather — snow can affect travel plans, especially in winter.',
-      'Book accommodations early — popular areas like Niseko and Furano fill up fast, especially during ski season.',
-      "Try local specialties — don't miss fresh seafood, soup curry, and Hokkaido dairy treats!",
+      'Dress in layers.',
+      "Carry cash.",
+      'Book accommodations early. Popular areas like Niseko and Furano fill up fast, especially during ski season.',
+      "Try local specialties. Don't miss fresh seafood, soup curry, and Hokkaido dairy treats!",
     ],
     photos: [
       hokkaido1.src,
@@ -66,15 +64,14 @@ export const PREFECTURES = {
     lastVisit: '2024-11-21',
     rating: 5,
     experience: `
-      🍁 Went to Nikko during autumn — perfect timing! Everything was covered in beautiful shades of brown and gold.<br />
-      🚌 Got myself a Nikko Pass — totally worth it! Buses here can be pricey, so the pass saved me quite a bit.<br />
-      🚄 Took the Spacia X train from Tokyo to Tochigi. A bit on the expensive side, but wow — super comfy and absolutely worth it!
+      🍁 Went to Nikko during autumn, perfect timing! Everything was covered in beautiful shades of brown and gold.<br />
+      🚌 Got myself a Nikko Pass.<br />
+      🚄 Took the Spacia X train from Tokyo to Tochigi. A bit on the expensive side, but super comfy and absolutely worth it!
     `,
     tips: [
-      "Grab a Nikko Pass - If you're heading to Nikko, this pass saves you money on trains and buses. Transport can be pricey otherwise.",
-      "Visit in Autumn - Tochigi is stunning in fall, especially Nikko. The golden and reddish leaves make it a perfect scenic getaway.",
-      "Use Local Buses Efficiently - Bus routes cover most tourist spots, but schedules can be sparse, so plan ahead and check timetables.",
-      "Ride the Spacia X or Limited Express - It's a comfortable and scenic ride from Tokyo, and definitely worth the splurge for the experience.",
+      "Grab a Nikko Pass.",
+      "Visit in Autumn.",
+      "Ride the Spacia X or Limited Express.",
     ],
     photos: [
       tochigi1.src,
